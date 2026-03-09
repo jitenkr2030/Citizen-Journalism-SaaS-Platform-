@@ -1,141 +1,243 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+# 📰 Citizen Journalism SaaS Platform
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+A comprehensive multi-tenant platform that empowers independent journalists to create their own digital news channels without technical skills. Perfect for the Indian market where thousands of reporters currently depend only on YouTube or Facebook.
 
-## ✨ Technology Stack
+## 🌟 Features
 
-This scaffold provides a robust foundation built with:
+### 🎯 Core Platform Features
+- **Multi-Tenant Architecture**: Support for unlimited journalists with independent channels
+- **Instant Channel Creation**: Sign up and launch your news channel in 60 seconds
+- **Professional News Website**: Mobile-responsive design with custom branding
+- **Mobile App Ready**: Native app support for iOS and Android
+- **Admin Dashboard**: Complete content management and analytics
 
-### 🎯 Core Framework
-- **⚡ Next.js 16** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+### 📝 Content Management
+- **Article Publishing**: Rich text editor with SEO optimization
+- **Video Hosting**: Upload, manage, and stream video content
+- **Live Streaming**: RTMP-based live broadcasting from mobile
+- **Content Categories**: Organize news by topics and tags
+- **View Analytics**: Track engagement and performance
 
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
+### 📢 Public Engagement
+- **Complaint System**: Citizens can submit issues and tips
+- **Evidence Upload**: Support for photos, videos, and documents
+- **Anonymous Reporting**: Protect whistleblower identity
+- **Investigation Tracking**: Monitor complaint resolution
 
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
+### 👥 Citizen Reporter Network
+- **Reporter Applications**: Onboard local contributors
+- **Verification System**: ID verification and background checks
+- **Report Submission**: Citizen journalists can submit stories
+- **Compensation System**: Pay for quality content
 
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Fetch** - Promise-based HTTP request
+### 💰 Monetization
+- **SaaS Subscriptions**: ₹999-₹9999/month per journalist
+- **Donations**: One-time and recurring supporter contributions
+- **Memberships**: Tiered benefits (Supporter ₹49, Premium ₹99, Patron ₹199)
+- **Advertisement**: Local business advertising platform
 
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
+## 🏗️ Technical Architecture
 
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
+### Frontend
+- **Next.js 16** with App Router
+- **TypeScript** for type safety
+- **Tailwind CSS** for responsive design
+- **Shadcn/ui** component library
+- **Lucide React** icons
 
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
+### Backend
+- **Prisma ORM** with SQLite database
+- **API-first architecture** with REST endpoints
+- **Multi-tenant data isolation**
+- **Real-time features** ready for WebSocket
 
-## 🎯 Why This Scaffold?
+### Database Schema
+- **Journalists**: Channel owners with subscription plans
+- **Articles**: News content with SEO metadata
+- **Videos**: Media hosting and streaming
+- **Complaints**: Public issue reporting
+- **Live Streams**: Real-time broadcasting
+- **Citizen Reporters**: Local contributor network
+- **Donations & Memberships**: Monetization system
 
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
+## 🚀 Getting Started
 
-## 🚀 Quick Start
+### Prerequisites
+- Node.js 18+ 
+- Bun package manager
+- Git
 
+### Installation
+
+1. **Clone the repository**
 ```bash
-# Install dependencies
+git clone https://github.com/jitenkr2030/Citizen-Journalism-SaaS-Platform-.git
+cd Citizen-Journalism-SaaS-Platform-
+```
+
+2. **Install dependencies**
+```bash
 bun install
+```
 
-# Start development server
+3. **Set up database**
+```bash
+bun run db:push
+```
+
+4. **Start development server**
+```bash
 bun run dev
-
-# Build for production
-bun run build
-
-# Start production server
-bun start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
+5. **Open your browser**
+Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 🤖 Powered by Z.ai
+## 📱 Pages & Features
 
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
+### Public Pages
+- **Homepage** (`/`): Professional landing with signup
+- **Channel Demo** (`/channel/demo`): Example journalist website
+- **Complaints** (`/complaints`): Public issue reporting
+- **Support** (`/support`): Donations and memberships
+- **Become Reporter** (`/become-reporter`): Citizen reporter application
 
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
+### Admin Pages
+- **Dashboard** (`/dashboard`): Complete journalist admin interface
+- **Content Management**: Articles, videos, live streams
+- **Complaint Management**: Review and investigate public issues
+- **Analytics**: Views, engagement, revenue tracking
 
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
+### API Endpoints
+- **Authentication**: `/api/auth/signup`
+- **Articles**: `/api/articles` (CRUD operations)
+- **Videos**: `/api/videos` (Upload & manage)
+- **Complaints**: `/api/complaints` (Submit & review)
+- **Live Streams**: `/api/livestream` (Create & manage)
+- **Citizen Reporters**: `/api/citizen-reporters`
+- **Donations**: `/api/donations`
+- **Memberships**: `/api/memberships`
 
-## 📁 Project Structure
+## 💼 Business Model
 
+### Subscription Tiers
+- **Basic Plan**: ₹999/month
+  - News website
+  - 10 GB video storage
+  - Basic analytics
+  - Email support
+
+- **Pro Plan**: ₹2,999/month ⭐ Popular
+  - Everything in Basic
+  - 100 GB video storage
+  - Live streaming
+  - Mobile app
+  - Advanced analytics
+  - Priority support
+
+- **Enterprise Plan**: ₹9,999/month
+  - Everything in Pro
+  - Unlimited storage
+  - Custom domain
+  - API access
+  - Dedicated support
+
+### Revenue Potential
+- **100 journalists**: ₹99,900/month
+- **1,000 journalists**: ₹9,99,000/month
+- **10,000 journalists**: ₹9,99,90,000/month
+
+### Additional Revenue Streams
+- **Platform fees**: 10% commission on donations
+- **Advertisement revenue**: 30% of ad spend
+- **Premium features**: Add-on services
+- **Custom development**: Enterprise solutions
+
+## 🎯 Target Market
+
+### Primary Market: India
+- **Thousands of independent journalists** currently on YouTube/Facebook
+- **District-level reporters** needing their own platform
+- **Local news channels** in tier-2/3 cities
+- **Citizen journalists** and activists
+- **Community media organizations**
+
+### Why India?
+- 📱 **Mobile-first population**: 700+ million smartphone users
+- 🗣️ **Regional languages**: Demand for local language content
+- 🏛️ **Democratic society**: Need for independent journalism
+- 💰 **Growing economy**: Increasing advertising spend
+- 🌐 **Digital transformation**: Government push for digital media
+
+## 🔧 Configuration
+
+### Environment Variables
+Create a `.env` file in the root directory:
+```env
+DATABASE_URL="file:./db/custom.db"
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```
-src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
-```
 
-## 🎨 Available Features & Components
+### Database Configuration
+The platform uses SQLite for development. For production:
+- PostgreSQL for better performance
+- Read replicas for scaling
+- Regular backups
 
-This scaffold includes a comprehensive set of modern web development tools:
+### Deployment Options
+- **Vercel**: Recommended for Next.js apps
+- **AWS**: Full control with EC2/RDS
+- **DigitalOcean**: Affordable cloud hosting
+- **Railway**: Simple deployment
 
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
+## 🔒 Security Features
 
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
+- **Data isolation**: Multi-tenant database separation
+- **Input validation**: Comprehensive form validation
+- **CSRF protection**: Built-in Next.js security
+- **Rate limiting**: API abuse prevention
+- **Content filtering**: Prevent spam and abuse
 
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
+## 🌍 Localization
 
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Fetch + TanStack Query
-- **State Management**: Simple and scalable with Zustand
+The platform is designed for easy localization:
+- **Hindi support**: Ready for regional languages
+- **Currency formatting**: Indian Rupee (₹)
+- **Date/time formats**: Indian standards
+- **Phone validation**: Indian mobile numbers
+- **Address formats**: Indian postal system
 
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
+## 🤝 Contributing
 
-## 🤝 Get Started with Z.ai
+We welcome contributions! Please follow these steps:
 
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+For support and questions:
+- 📧 Email: support@newssaasbharat.com
+- 💬 Discord: [Join our community](https://discord.gg/newssaas)
+- 📱 WhatsApp: +91 98765 43210
+
+## 🌟 Acknowledgments
+
+- **Next.js team** for the amazing framework
+- **Prisma** for the excellent ORM
+- **Tailwind CSS** for the utility-first CSS framework
+- **Shadcn/ui** for the beautiful component library
+- **Indian journalism community** for inspiration and feedback
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+**🚀 Empowering independent journalists across India, one channel at a time!**
+
+Made with ❤️ for the Indian journalism community
